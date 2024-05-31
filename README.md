@@ -60,3 +60,18 @@ kotlinOptions {
 
 ## 오류
 ### Unable to load class 'org.jetbrains.kotlin.gradle.plugin.mpp.pm20.KotlinCompilationData'.
+```groovy
+id 'org.jetbrains.kotlin.android' version '1.9.23' apply false
+id 'com.google.devtools.ksp' version '1.9.23-1.0.19' apply false
+```
+- projet/build.gradle
+- KSP 와 Kotlin 버전이 일치하지 않으면 발생하는 오류
+- 버전을 맞춰주면 적상 작동
+
+```groovy
+tasks.withType(KotlinJvmCompile.class).configureEach {
+    jvmTargetValidationMode = JvmTargetValidationMode.WARNING
+}
+```
+- app/build.gradle
+- 이것도 안하니 오류..
