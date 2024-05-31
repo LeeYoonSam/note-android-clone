@@ -1,5 +1,8 @@
 # Note Android App Clone
 
+Jetpack Compose 노트 앱 만들기 클론 
+- [How to Build a Note App with Jetpack Compose, MVVM, and Clean Architecture](https://www.youtube.com/watch?v=srp2d3_ofRU)
+
 ## Android Gradle Plugin(AGP) 버전 호환
 ```groovy
 plugins {
