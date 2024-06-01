@@ -31,7 +31,6 @@ id 'com.google.devtools.ksp' version '1.9.23-1.0.19' apply false
 
 ```groovy
 plugins {
-    ...
     id 'com.google.devtools.ksp'
 }
 ```
